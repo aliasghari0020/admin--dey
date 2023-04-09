@@ -1,0 +1,122 @@
+@import url("./font.css");
+@import url("./general.css");
+.login {
+  font-family: "IRANSans";
+}
+.login .fa-paw {
+  font-size: 26px;
+}
+.login .login_wrapper {
+  right: 0;
+  margin: 0 auto;
+  margin-top: 5%;
+  max-width: 350px;
+  position: relative;
+}
+
+.registration_form {
+  position: absolute;
+  top: 0;
+  z-index: 21;
+  opacity: 0;
+}
+
+.rest_pass_form {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 21;
+  opacity: 0;
+  width: 100%;
+}
+
+.login_form {
+  position: absolute;
+  top: 0;
+  z-index: 22;
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.login_box {
+  padding: 20px;
+  margin: auto;
+}
+
+.login_content {
+  margin: 0 auto;
+  padding: 25px 0 0;
+  position: relative;
+  text-align: center;
+  min-width: 280px;
+}
+.login_content form .logo {
+  margin-bottom: 2rem;
+}
+
+.btn-default:hover {
+  text-decoration: none;
+}
+
+div .reset_pass {
+  margin-top: 13px !important;
+  margin-right: 39px;
+  float: left;
+}
+.login_content form {
+  margin: 20px 0;
+  position: relative;
+}
+.login_content form input[type="email"],
+.login_content form input[type="password"] {
+  direction: ltr;
+  border: none;
+  margin: 20px 0;
+  padding: 0 2px;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-blue);
+}
+.login_content form input[type="email"]:focus,
+.login_content form input[type="password"]:focus {
+  outline: none;
+}
+.login_content form input[type="text"]{
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--primary-blue);
+  outline: none;
+  box-shadow: none;
+  width: 80%;
+  margin: auto;
+}
+.checkbox-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+}
+.checkbox-container label{
+  margin: 3px 3px 0 ;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--primary-gray);
+}
+.login_content form .login-btn{
+  padding: 6px;
+  width: 100%;
+  background: var(--primary-blue);
+  display: inline-block;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.login_content form .login-btn:hover{
+  background: var(--primary-gray);
+}
