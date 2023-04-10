@@ -1345,7 +1345,7 @@ Top Header
     color: #686972;
     text-align: inherit;
     white-space: nowrap;
-    background-color: transparent;
+    background-color: var(--white);
     border: 0;
     font-size: 13px;
     line-height: 0.4;
@@ -1497,7 +1497,6 @@ Left Navigation Sidebar
     overflow: auto;
     background-color: var(--withe);
     -webkit-transition: all 0.3s ease;
-    z-index: 99999;
 }
 
 .nav-left-sidebar .nav-link[data-toggle="collapse"] {
