@@ -3638,7 +3638,9 @@ Pills Regular
 
 .pills-regular {}
 
-.pills-regular .nav.nav-pills {}
+.pills-regular .nav.nav-pills {
+    border-bottom: 1px solid silver;
+}
 
 .pills-regular .nav.nav-pills .nav-item {}
 
