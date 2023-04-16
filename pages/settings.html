@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="../assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
 </head>
 
@@ -189,77 +189,829 @@
                             <!-- ============================================================== -->
                             <!-- basic pills  -->
                             <!-- ============================================================== -->
+                            <!-- basic pills  -->
+                            <!-- ============================================================== -->
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                            aria-selected="true">Home</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                            aria-selected="false">Profile</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="messages-tab" data-bs-toggle="tab"
-                                            data-bs-target="#messages" type="button" role="tab" aria-controls="messages"
-                                            aria-selected="false">Messages</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="settings-tab" data-bs-toggle="tab"
-                                            data-bs-target="#settings" type="button" role="tab" aria-controls="settings"
-                                            aria-selected="false">Settings</button>
-                                    </li>
-                                </ul>
+                                <div class="section-block">
+                                    <!-- <h5 class="section-title">Pills tabs</h5>
+                                    <p>Takes the basic nav from above and adds the .nav-tabs class to generate a tabbed
+                                        interface..</p> -->
+                                </div>
+                                <div class="pills-regular">
+                                    <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        ...</div>
-                                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                                href="#pills-home" role="tab" aria-controls="home"
+                                                aria-selected="true">عمومی</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-home-tab" data-toggle="pill"
+                                                href="#pills-integration" role="tab" aria-controls="home"
+                                                aria-selected="true">یک پارچه سازی</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-home-tab" data-toggle="pill"
+                                                href="#pills-file" role="tab" aria-controls="home"
+                                                aria-selected="true">فایل ها</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-wysiwyg" role="tab" aria-controls="contact"
+                                                aria-selected="false">wysiwyg</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-email" role="tab" aria-controls="contact"
+                                                aria-selected="false">email</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-comment" role="tab" aria-controls="contact"
+                                                aria-selected="false">نظرات</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-user" role="tab" aria-controls="contact"
+                                                aria-selected="false">کاربران</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-reward" role="tab" aria-controls="contact"
+                                                aria-selected="false">Reward</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-score-tab" data-toggle="pill"
+                                                href="#pills-score" role="tab" aria-controls="score"
+                                                aria-selected="false">score</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <!-- ============================================================== -->
+                                        <!-- General-->
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                نام وب سایت</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p> نام وب سایت برای عنوان صفحه </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                شعار سایت</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>سه یا چهار کلمه برای نشان دادن رسالت کلی سایت</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                عنوان متا</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p> دو یا سه کلمه برای توضیح در مورد سایت </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                فرمت نمایش تاریخ</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>فرمت نمایش تاریخ که چگونه باشد</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                واحد پول</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>علامت واحد پولی سایت برای استفاده از فروشگاه ها</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                تعداد ردیف در هر صفحه </label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p>تعداد آتیم هایا ردیف ها در صفحه </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">تعداد فیت های Rss</label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p>چه تعداد فیت ها برای Rss بلاگ باید ایجاد شود</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">تعداد خبر های داشبورد</label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p>میخواهید چند خبر در داشبورد پنل نمایش داده شود</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <h5>وضعیت سایت</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline" checked=""
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">باز کردن </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">بستن</span>
+                                                            </label>
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlTextarea1">پیغام بسته بودن </label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                rows="5"></textarea>
+                                                                <p>هنگامی که سایت را در وضعیت بسته بودن قرار میدهید این پیام برای کابران نمایش داده می شود</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <h5> برای استفاده از پنل مدیریت استفاده از HTTPS اجباری است</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline" checked=""
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label"> بله </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">خیر</span>
+                                                            </label>
+                                                            <p>فقط اجازه داده شود که پنل مدیرت HTTPS باز شود</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- Integration-->
+                                        <div class="tab-pane fade" id="pills-integration" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                دامنه CDN</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>استفاده از سرور های نگهدارنده</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                google Tracking Code</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>کد گوکل خود را در این جا وارد کنید </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                پروفابل google Analytic</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>profile Id شما در گوگل آنالیتیک</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                ایمیل متصل به google Analytic </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>ایمیلی که برای google Analyticاستفاده میکنید را اینجا
+                                                                وارد کنید</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Rackspace Cloud Files API key</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                پسورد google Analytic </label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select"> Akismet Api key</label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p>Akismet یک سیستم جلوگیری از اسپم است</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- file -->
+                                        <div class="tab-pane fade" id="pills-file" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group m-b-40">
+                                                            <h5>Enabled file Storage Providers</h5>
+                                                            <label
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox" checked=""
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">Rackspace Cloud
+                                                                    files</span>
+                                                            </label>
+                                                            <label
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox" checked=""
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">Amazon S۳</span>
+                                                            </label>
+                                                            <p>Which file storage providers do you want to enable If you
+                                                                enable a cloud provider you must provide valid auth keys
+                                                                below</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Amazon S۳ Access Key</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>To enable cloud file storage in your Amazon S۳ account
+                                                                provide Access Key</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Amazon S۳ Secret Key</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>You also must provide your Amazon S۳ Secret Key. You will
+                                                                find it at the same location as your Access Key in your
+                                                                Amazon account</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Amazon S۳ URL</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>Change this if using one of Amazons EUlocations or a
+                                                                custom domain</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <h5>Amazon s3 geographic location</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline" checked=""
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">united states</span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">Europe</span>
+                                                            </label>
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Rackspace Cloud Files UserName</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Rackspace Cloud Files API key</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Filesize limit</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="5">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select"> کش فایل</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>Day-30</option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>فایل هایی که شما در سایت نمایش میدهید کش می شوند هر کش
+                                                                زمانی دارداین زمان چقدر باشد؟</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- wysiwyg -->
+                                        <div class="tab-pane fade" id="pills-wysiwyg" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlTextarea1">تنظیمات
+                                                                cKeditor</label>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="10"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- email -->
+                                        <div class="tab-pane fade" id="pills-email" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                ایمیل تماس</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>همه ایمیل هااز کاربران و مهمان های و سایت به این آدرس
+                                                                فرستاپه می شود</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                ایمیل .سرور </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>ایمیل های ارسال شده به کاربران از این آدرس فرستاده می شود
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">پرتوکل ایمیل</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>mail</option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>پرتوکل ارسال ایمیل</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">هاست
+                                                                SMTP</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>هاست SMTP</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">پسورد
+                                                                SMTP</label>
+                                                            <input id="inputText3" type="password" class="form-control"
+                                                                value="">
+                                                            <p>پسورد SMTP</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3"
+                                                                class="col-form-label">پورتSMTP</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>پورت SMTP</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label"> نام کابری
+                                                                SMTP</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+                                                            <p>نام کابری SMTP</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                email line Endings</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>r/n/</option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>change form the standard r/n/ line ending tp php_EOL for
+                                                                same email servers </p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                مسیر sendEmail</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="10">
+                                                            <p>مسیر sendEmail بر روی سرور</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- comment -->
+                                        <div class="tab-pane fade " id="pills-comment" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group m-b-30">
+                                                            <h5>فعال کردن کامنت ها</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-active-comment"
+                                                                    checked="" class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-active-comment"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p> آیا کاربران مجاز به ارسال نظرات خود هستند؟
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <h5>مدیریت نظرات و کامنت ها</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline" checked=""
+                                                                    class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p> آیا باید کامت ها و نظرات روی سایت بررسی شوند و بعد روی
+                                                                سایت نمایش داده شود ؟</p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <label for="input-select">ترتیب نمایش نظرات</label>
+                                                            <select class="form-control mb-2" id="input-select">
+                                                                <option> اول قدیمی تر ها </option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>ترتیب نمایش ها چگونه باشد ؟
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <label for="input-select"> احازه استفاده از markdown
+                                                            </label>
+                                                            <select class="form-control mb-2" id="input-select">
+                                                                <option>متن ساده </option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>
+                                                                آیا میخواهید در هنگام درج نظرات کاربران بتوانند از
+                                                                markdown استفاده کنند
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group m-t-30">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- users -->
+                                        <div class="tab-pane fade " id="pills-user" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group m-b-30">
+                                                            <h5>نام کابری خودکار</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-auto-name" checked=""
+                                                                    class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-auto-name"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p>در صورت فعال شدن نام کاربری به صورت خودکار ایجاد می شود و
+                                                                نیازی نیست کاربر نام کاربری خود را ایجاد کند</p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <h5> فعال کردن پروفابل ها</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-active-pro" checked=""
+                                                                    class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-active-pro"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p>اجازه برای کاربران برای استفاده و ویراش کاربران</p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <h5> ارسال ایمیل ثبت نام</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-send-email" checked=""
+                                                                    class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-send-email"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p> هنگامی که فردی در سایت ثبت نام میکند یک ایمیل به آدرس
+                                                                تماس ارسال میکند </p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <label for="input-select"> ایمیل فعال سازی</label>
+                                                            <select class="form-control mb-2" id="input-select">
+                                                                <option>فعال سازی با ایمیل</option>
+                                                                <option>به صورت دستی</option>
+                                                            </select>
+                                                            <p>اگر میخواهید زمانی که کابر در سایت ثبت نام میکند یک کد
+                                                                جهت فعال سازی برای آن ها ایمل شود این گزینه را فعال کیند
+                                                                و اگر غیر فعال باشد این کارا باید ادمین به صورت دستی
+                                                                انجام دهد.
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <h5> فعال کردن امکان ثبت نام کابر ها</h5>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline" checked=""
+                                                                    class="custom-control-input">
+                                                                <span class="custom-control-label">فعال </span>
+                                                            </label>
+                                                            <br>
+                                                            <label
+                                                                class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" name="radio-inline"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label">غیر فعال</span>
+                                                            </label>
+                                                            <p> اجازه می دهد کاربران جدید در سایت ثبت نام کنند </p>
+                                                        </div>
+                                                        <div class="form-group m-b-30">
+                                                            <label for="input-select"> قابل مشاهده بودن پروفایل
+                                                                ها</label>
+                                                            <select class="form-control mb-2" id="input-select">
+                                                                <option> قابل مشاهده بودن برای همه </option>
+                                                                <option></option>
+                                                            </select>
+                                                            <p>
+                                                                مشخص کنید چه کسی میتواند پروفایل کاربران را مشاهده کند
+                                                            </p>
+                                                        </div>
+                                                        <div class="form-group m-t-30">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- reward -->
+                                        <div class="tab-pane fade" id="pills-reward" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                low stock level</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="10">
+                                                            <p>the numer of Rewards remainig before stock is considered
+                                                                low</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                New Reward Time </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="86400">
+                                                            <p>The time in sconds that a Reward is complete new</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select"> Make Image Scuare</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+                                                            <p>some theme my required scuare images to keep layouts
+                                                                consistent</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">Required login to Purchase</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+                                                            <p></p>
+                                                        </div>
+
+                                                        <div class="form-group m-t-30">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Rewards per page </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="15">
+                                                            <p>The time in sconds that a Reward is complete new</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">Default Currency code </label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>GBP</option>
+                                                            </select>
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select">Disable Reward Sales</label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Image background color </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="ffffff">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-elect-4" class="col-form-label">
+                                                                Override Default dashboard </label>
+                                                            <select class="form-control" id="input-elect-4">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Currency Api key </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlTextarea1">
+                                                                Disable Massage</label>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select"> Basic Checkout View </label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="input-select"> Show variations </label>
+                                                            <select class="form-control" id="input-select">
+                                                                <option>خیر</option>
+                                                                <option>بله</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group m-t-30">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <!-- ============================================================== -->
+                                        <!-- score -->
+                                        <div class="tab-pane fade" id="pills-score" role="tabpanel"
+                                            aria-labelledby="pills-score-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Login score</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="0.5">
+                                                            <p>this score give to user in login to account</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                complete profile score </label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="0">
+                                                            <p>this score give to user in complete to profile</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Birthday score</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="20">
+                                                            <p>this score give to user in login to birthday</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Login score limit</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="10">
+                                                            <p>maximum moonth score that user can be give in login</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputText3" class="col-form-label">
+                                                                Active account score</label>
+                                                            <input id="inputText3" type="text" class="form-control"
+                                                                value="5">
+                                                            <p>this score give to user in active to account</p>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn  btn-primary">ذخیره</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                                        ...</div>
-                                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                                        ...</div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <!-- ============================================================== -->
-                    <!-- edited comment box -->
-                    <!-- ============================================================== -->
-
                 </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- end footer -->
-            <!-- ============================================================== -->
-        </div>
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <span>تمام حقوق محفوظ ۱۴۰۲-۱۳۹۰ هلدینگ الماس داده(دانش بنیان)</span>
-                    </div>
-
-                </div>
+                <!-- ============================================================== -->
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- end footer -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- end wrapper  -->
-        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- edited comment box -->
+    <!-- ============================================================== -->
+
+    </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- end footer -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <span>تمام حقوق محفوظ ۱۴۰۲-۱۳۹۰ هلدینگ الماس داده(دانش بنیان)</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end footer -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- end main wrapper  -->
@@ -285,17 +1037,37 @@
     <script src="../assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
     <script src="../assets/vendor/charts/c3charts/C3chartjs.js"></script>
     <script src="../assets/libs/js/dashboard-ecommerce.js"></script>
-    <script>
-        var triggerTabList = [].slice.call(document.querySelectorAll('#myTab'))
-        triggerTabList.forEach(function (triggerEl) {
-            var tabTrigger = new bootstrap.Tab(triggerEl)
 
-            triggerEl.addEventListener('click', function (event) {
-                event.preventDefault()
-                tabTrigger.show()
-            })
-        })
-    </script>
 </body>
 
 </html>
+<!-- <li class="nav-item">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                                href="#pills-profile" role="tab" aria-controls="profile"
+                                                aria-selected="false">یک پارچه سازی</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="contact"
+                                                aria-selected="false">فایل ها</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="contact"
+                                                aria-selected="false"> wysiwyg</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="contact"
+                                                aria-selected="false">email</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="contact"
+                                                aria-selected="false">نظرات</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                                href="#pills-contact" role="tab" aria-controls="contact"
+                                                aria-selected="false">کاربران</a>
+                                        </li> -->
