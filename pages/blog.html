@@ -183,115 +183,17 @@
                 <div class="dashboard-wrapper">
                     <div class="container-fluid dashboard-content">
                         <div class="row m-b-60">
-                            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-                                <h5 class="section-title"> قالب های ایمیل</h5>
-                                <p>ایجاد ویرایش و ذخیره قالب های ایمیل به صورت پویا
+                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                <h5 class="section-title"> بلاگ</h5>
+                                <p>   مقالات منتشر شده در بلاگ
                                 </p>
                             </div>
-                            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-                                <a href="#" style="margin-right: auto;">
-                                    <button class="btn-default btn">اضافه کردن متغیر</button>
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                                <a href="#">
+                                    <button class="btn-default btn">پست جدید</button>
                                 </a>
-                            </div>
-                        </div>
-                        <div class="row m-b-30">
-                            <!-- ============================================================== -->
-                            <!-- top selling products  -->
-                            <!-- ============================================================== -->
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class="section-block">
-                                    <p>قالب پیش فرض</p>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead class="bg-light">
-                                                    <tr class="border-0">
-                                                        <th class="border-0" style="width: 10%;">
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </th>
-                                                        <th class="border-0" style="width: 35%;">نام</th>
-                                                        <th class="border-0" style="width: 40%;">شرح </th>
-                                                        <th class="border-0" style="width: 5%;">زبان</th>
-                                                        <th class="border-0"> </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
-                                                        <td class="text-left">
 
-                                                            <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-file  mr-1 snapchat-color fa-min-sm"></i>
-                                                                </a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
-                                                        <td class="text-left">
-                                                            <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-file  snapchat-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="form-group m-r-10 m-t-40">
-                                        <button class="btn  btn-secondary">حذف</button>
-                                    </div>
-                                </div>
                             </div>
-                            <!-- ============================================================== -->
                         </div>
                         <div class="row">
                             <!-- ============================================================== -->
@@ -299,11 +201,52 @@
                             <!-- ============================================================== -->
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="section-block">
-                                    <p> قالب های که توسط کاربران ایجاد می شود</p>
-
+                                    <h5>پست ها</h5>
                                 </div>
                                 <div class="card">
                                     <div class="card-body p-0">
+                                        <!-- filter table -->
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                            <form class="row">
+                                                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="input-select">
+                                                            <option>همه</option>
+                                                            <option>بله</option>
+                                                            <option>خیر</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="input-select">
+                                                            <option>همه</option>
+                                                            <option>user</option>
+                                                            <option>managers</option>
+                                                            <option>Marketers group</option>
+                                                            <option>blog</option>
+                                                            <option>مدیریت و بخش بلاگ</option>
+                                                            <option>club</option>
+                                                            <option>submanager</option>
+                                                            <option>sejam</option>
+                                                            <option>Reception</option>
+                                                            <option>investor_admin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <input id="inputText3" type="text" class="form-control"
+                                                            placeholder="کلید واژه">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <button class="btn  btn-primary ">انصراف</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                         <div class="table-responsive">
                                             <table class="table">
                                                 <thead class="bg-light">
@@ -316,10 +259,10 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </th>
-                                                        <th class="border-0" style="width: 35%;">نام</th>
-                                                        <th class="border-0" style="width: 40%;">شرح </th>
-                                                        <th class="border-0" style="width: 5%;">زبان</th>
-                                                        <th class="border-0"> </th>
+                                                        <th class="border-0" style="width: 50%;">پست</th>
+                                                        <th class="border-0" style="width: 20%;"> وضعیت</th>
+                                                        <th class="border-0 text-left m-l-10" style="width: 10%;">
+                                                            عملیات</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -332,23 +275,19 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
+                                                        <td class="border-0">گزارشات بازار مورخ ۲۲ فروردین</td>
+                                                        <td> ارسال شده </td>
                                                         <td class="text-left">
-
                                                             <div>
                                                                 <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
+                                                                    <i class="fa fa-eye  mr-1  fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i class="fa fa-pencil text-info fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i
-                                                                        class="fa fa-close  mr-1 pinterest-color fa-min-sm"></i>
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
                                                                 </a>
                                                             </div>
                                                         </td>
@@ -362,45 +301,117 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
+                                                        <td>گزارشات بازار مورخ ۲۲ فروردین</td>
+                                                        <td> ارسال شده </td>
                                                         <td class="text-left">
                                                             <div>
                                                                 <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
+                                                                    <i class="fa fa-eye  mr-1  fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i class="fa fa-pencil text-info fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i
-                                                                        class="fa fa-close pinterest-color  mr-1  fa-min-sm"></i>
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
                                                                 </a>
-
                                                             </div>
                                                         </td>
                                                     </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label"></span>
+                                                            </label>
+                                                        </td>
+                                                        <td>گزارشات بازار مورخ ۲۲ فروردین</td>
+                                                        <td> ارسال شده </td>
+                                                        <td class="text-left">
+                                                            <div>
+                                                                <a href="">
+                                                                    <i class="fa fa-eye  mr-1  fa-min-sm"></i>
+                                                                </a>
+                                                                <a href="">
+                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
+                                                                </a>
+                                                                <a href="">
+                                                                    <i
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label"></span>
+                                                            </label>
+                                                        </td>
+                                                        <td>گزارشات بازار مورخ ۲۲ فروردین</td>
+                                                        <td> ارسال شده </td>
+                                                        <td class="text-left">
+                                                            <div>
+                                                                <a href="">
+                                                                    <i class="fa fa-eye  mr-1  fa-min-sm"></i>
+                                                                </a>
+                                                                <a href="">
+                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
+                                                                </a>
+                                                                <a href="">
+                                                                    <i
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="form-group m-r-10 m-t-40">
-                                        <button class="btn  btn-secondary">حذف</button>
+                                    <div class="card-footer">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="form-group">
+                                            <button class="btn  btn-secondary ">حذف</button>
+                                            <button class="btn  btn-primary">انتشار</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- ============================================================== -->
                         </div>
                     </div>
-                    <!-- ============================================================== -->
                 </div>
+                <!-- ============================================================== -->
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- edited comment box -->
-        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- edited comment box -->
+    <!-- ============================================================== -->
 
     </div>
     </div>

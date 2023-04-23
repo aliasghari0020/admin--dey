@@ -182,116 +182,14 @@
             <div class="dashboard-ecommerce">
                 <div class="dashboard-wrapper">
                     <div class="container-fluid dashboard-content">
-                        <div class="row m-b-60">
-                            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-                                <h5 class="section-title"> قالب های ایمیل</h5>
-                                <p>ایجاد ویرایش و ذخیره قالب های ایمیل به صورت پویا
+                        <div class="row m-b-30">
+                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                                <h5 class="section-title"> نظارت</h5>
+                                <p> کاربران می توانند نظرات خود را بروی سایت قرار دهند 
                                 </p>
                             </div>
-                            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-                                <a href="#" style="margin-right: auto;">
-                                    <button class="btn-default btn">اضافه کردن متغیر</button>
-                                </a>
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                             </div>
-                        </div>
-                        <div class="row m-b-30">
-                            <!-- ============================================================== -->
-                            <!-- top selling products  -->
-                            <!-- ============================================================== -->
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class="section-block">
-                                    <p>قالب پیش فرض</p>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead class="bg-light">
-                                                    <tr class="border-0">
-                                                        <th class="border-0" style="width: 10%;">
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </th>
-                                                        <th class="border-0" style="width: 35%;">نام</th>
-                                                        <th class="border-0" style="width: 40%;">شرح </th>
-                                                        <th class="border-0" style="width: 5%;">زبان</th>
-                                                        <th class="border-0"> </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
-                                                        <td class="text-left">
-
-                                                            <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-file  mr-1 snapchat-color fa-min-sm"></i>
-                                                                </a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label
-                                                                class="custom-control custom-checkbox custom-control-inline">
-                                                                <input type="checkbox"
-                                                                    class="custom-control-input"><span
-                                                                    class="custom-control-label"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
-                                                        <td class="text-left">
-                                                            <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
-                                                                </a>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-file  snapchat-color  mr-1  fa-min-sm"></i>
-                                                                </a>
-
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="form-group m-r-10 m-t-40">
-                                        <button class="btn  btn-secondary">حذف</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ============================================================== -->
                         </div>
                         <div class="row">
                             <!-- ============================================================== -->
@@ -299,16 +197,42 @@
                             <!-- ============================================================== -->
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="section-block">
-                                    <p> قالب های که توسط کاربران ایجاد می شود</p>
-
+                                   <h5>نظرات</h5>
                                 </div>
                                 <div class="card">
                                     <div class="card-body p-0">
+                                        <!-- filter table -->
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                                            <form class="row">
+                                                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        
+                                                        <select class="form-control" id="input-select">
+                                                            <option> تایید شده</option>
+                                                            <option>برسی نشده</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="input-select">
+                                                            <option>همه</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 p-l-0">
+                                                    <div class="form-group">
+                                                        <button class="btn  btn-secondary ">انصراف</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                         <div class="table-responsive">
-                                            <table class="table">
+                                            <!-- <table class="table">
+
                                                 <thead class="bg-light">
                                                     <tr class="border-0">
-                                                        <th class="border-0" style="width: 10%;">
+                                                        <th class="border-0">
                                                             <label
                                                                 class="custom-control custom-checkbox custom-control-inline">
                                                                 <input type="checkbox"
@@ -316,9 +240,12 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </th>
-                                                        <th class="border-0" style="width: 35%;">نام</th>
-                                                        <th class="border-0" style="width: 40%;">شرح </th>
-                                                        <th class="border-0" style="width: 5%;">زبان</th>
+                                                        <th class="border-0">نام</th>
+                                                        <th class="border-0"> </th>
+                                                        <th class="border-0"> گروه ها کابری</th>
+                                                        <th class="border-0">فعال </th>
+                                                        <th class="border-0"> تاریخ ثبت نام </th>
+                                                        <th class="border-0"> آخرین بازدید ها</th>
                                                         <th class="border-0"> </th>
                                                     </tr>
                                                 </thead>
@@ -332,23 +259,20 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
+                                                        <td>جواد عباسی </td>
+                                                        <td> shhadhdghgj@gmail.com </td>
+                                                        <td> User </td>
+                                                        <td> بله </td>
+                                                        <td> 2019 30 may</td>
+                                                        <td> 2019 30 may</td>
                                                         <td class="text-left">
-
                                                             <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
                                                                 <a href="">
                                                                     <i class="fa fa-pencil text-info fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i
-                                                                        class="fa fa-close  mr-1 pinterest-color fa-min-sm"></i>
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
                                                                 </a>
                                                             </div>
                                                         </td>
@@ -362,45 +286,68 @@
                                                                     class="custom-control-label"></span>
                                                             </label>
                                                         </td>
-                                                        <td> Comment Notification </td>
-                                                        <td> email that is sent to admin when someone create a comments
-                                                        </td>
-                                                        <td> en</td>
+                                                        <td>جواد عباسی </td>
+                                                        <td> shhadhdghgj@gmail.com </td>
+                                                        <td> User </td>
+                                                        <td> بله </td>
+                                                        <td> 2019 30 may</td>
+                                                        <td> 2019 30 may</td>
                                                         <td class="text-left">
                                                             <div>
-                                                                <a href="">
-                                                                    <i
-                                                                        class="fa fa-eye  medium-color  mr-1  fa-min-sm"></i>
-                                                                </a>
                                                                 <a href="">
                                                                     <i class="fa fa-pencil text-info fa-min-sm"></i>
                                                                 </a>
                                                                 <a href="">
                                                                     <i
-                                                                        class="fa fa-close pinterest-color  mr-1  fa-min-sm"></i>
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
                                                                 </a>
-
                                                             </div>
                                                         </td>
                                                     </tr>
-                                            </table>
+                                                    <tr>
+                                                        <td>
+                                                            <label
+                                                                class="custom-control custom-checkbox custom-control-inline">
+                                                                <input type="checkbox"
+                                                                    class="custom-control-input"><span
+                                                                    class="custom-control-label"></span>
+                                                            </label>
+                                                        </td>
+                                                        <td>جواد عباسی </td>
+                                                        <td> shhadhdghgj@gmail.com </td>
+                                                        <td> User </td>
+                                                        <td> بله </td>
+                                                        <td> 2019 30 may</td>
+                                                        <td> 2019 30 may</td>
+                                                        <td class="text-left">
+                                                            <div>
+                                                                <a href="">
+                                                                    <i class="fa fa-pencil text-info fa-min-sm"></i>
+                                                                </a>
+                                                                <a href="">
+                                                                    <i
+                                                                        class="fa fa-close  mr-1 text-danger fa-min-sm"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                            </table> -->
+                                            <h5 class="text-center">بدون نظر</h5>
                                         </div>
-                                    </div>
-                                    <div class="form-group m-r-10 m-t-40">
-                                        <button class="btn  btn-secondary">حذف</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- ============================================================== -->
                         </div>
                     </div>
-                    <!-- ============================================================== -->
                 </div>
+                <!-- ============================================================== -->
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- edited comment box -->
-        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- edited comment box -->
+    <!-- ============================================================== -->
 
     </div>
     </div>
